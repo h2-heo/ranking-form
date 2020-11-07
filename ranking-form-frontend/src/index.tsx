@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import globalStyle from 'styles/globalStyle';
 import App from 'App';
 import reportWebVitals from 'lib/reportWebVitals';
+import 'antd/dist/antd.css';
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,8 +1,9 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+import { SiteLayout } from 'containers';
 
 function HomePage() {
-  return <div>Home</div>;
+  return <SiteLayout>Home</SiteLayout>;
 }
 
 export default HomePage;
