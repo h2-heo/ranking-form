@@ -1,11 +1,15 @@
+/** @jsx jsx */
+import { jsx, Global } from '@emotion/core';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import globalStyle from 'styles/globalStyle';
+import App from 'App';
+import reportWebVitals from 'lib/reportWebVitals';
+import 'antd/dist/antd.css';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Global styles={globalStyle} />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
