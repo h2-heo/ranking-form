@@ -2,29 +2,29 @@
 import { jsx, css } from '@emotion/core';
 import { List, Space, Tag } from 'antd';
 import { MessageOutlined, StarOutlined } from '@ant-design/icons';
-import usePolls, { PollData } from 'hooks/poll/usePolls';
+import useSurveys, { SurveyData } from 'hooks/survey/useSurveys';
 
-function PollList() {
+function SurveyList() {
   const pageSize = 3;
 
-  const { polls } = usePolls();
+  const { surveys } = useSurveys();
 
   return (
     <List
       itemLayout="vertical"
       pagination={{ pageSize }}
-      dataSource={polls}
+      dataSource={surveys}
       renderItem={(item) => <ListItem item={item} />}
     />
   );
 }
 
 type ListItemProps = {
-  item: PollData;
+  item: SurveyData;
 };
 
 function ListItem({ item }: ListItemProps) {
-  const href = `/poll/${item.id}`;
+  const href = `/survey/${item.id}`;
 
   return (
     <List.Item
@@ -77,4 +77,4 @@ function IconText({ icon, text }: IconTextProps) {
   );
 }
 
-export default PollList;
+export default SurveyList;
