@@ -14,7 +14,7 @@ function SiteHeader({ className }: SiteHeaderProps) {
           <a href="/">Home</a>
         </Menu.Item>
         <Menu.Item>
-          <a href="/polls">Polls</a>
+          <a href="/surveys">Surveys</a>
         </Menu.Item>
       </Menu>
     </div>
