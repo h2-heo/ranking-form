@@ -1,4 +1,4 @@
-export type PollData = {
+export type SurveyData = {
   id: number;
   title: string;
   description: string;
@@ -8,8 +8,8 @@ export type PollData = {
   comments: number;
 };
 
-function usePolls() {
-  const polls: PollData[] = [
+function useSurveys() {
+  const surveys: SurveyData[] = [
     {
       id: 4,
       title:
@@ -52,7 +52,7 @@ function usePolls() {
     },
   ];
 
-  return { polls };
+  return { surveys };
 }
 
-export default usePolls;
+export default useSurveys;
